@@ -71,7 +71,7 @@ public class NumbersCat implements Numbers{
     }
 
     //Funcion say que traduce numeros a texto
-    public String say(long n) {
+    public  String say(long n) {
 
         // Si el numero es 0, devolvemos "Zero" y si es 100 devolvemos "Cent"
         if (n == 0) return "Zero";

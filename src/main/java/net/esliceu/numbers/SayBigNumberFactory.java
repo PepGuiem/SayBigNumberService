@@ -9,7 +9,6 @@ public class SayBigNumberFactory {
 
     private SayBigNumberFactory() {
         numbers = new NumbersCat();
-
     }
 
     public static SayBigNumberFactory getInstance() {

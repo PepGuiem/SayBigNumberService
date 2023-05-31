@@ -1,4 +1,5 @@
 package net.esliceu.numbers;
+
 public class BigNumber implements BigNumberOperator{
 
     //Variable en la que se guarda el valor de este BigNumber
