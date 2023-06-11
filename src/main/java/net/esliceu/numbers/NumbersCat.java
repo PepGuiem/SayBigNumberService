@@ -211,10 +211,18 @@ public class NumbersCat implements Numbers{
                 //Si la operacion es de las que estamos buscando, entramos y hacemos la operacion de pertinente usando los numeros a ambos lados del simbolo
                 if (word[i].contentEquals(operOrder) || word[i].contentEquals(operOrder2)) {
                     switch (word[i]) {
-                        case "+" -> operation = Long.parseLong(word[i - 1]) + Long.parseLong(word[i + 1]);
-                        case "-" -> operation = Long.parseLong(word[i - 1]) - Long.parseLong(word[i + 1]);
-                        case "*" -> operation = Long.parseLong(word[i - 1]) * Long.parseLong(word[i + 1]);
-                        case "/" -> operation = Long.parseLong(word[i - 1]) / Long.parseLong(word[i + 1]);
+                        case "+":
+                            operation = Long.parseLong(word[i - 1]) + Long.parseLong(word[i + 1]);
+                            break;
+                        case "-" :
+                            operation = Long.parseLong(word[i - 1]) - Long.parseLong(word[i + 1]);
+                            break;
+                        case "*" :
+                            operation = Long.parseLong(word[i - 1]) * Long.parseLong(word[i + 1]);
+                            break;
+                        case "/" :
+                            operation = Long.parseLong(word[i - 1]) / Long.parseLong(word[i + 1]);
+                            break;
                     }
 
                     //Vaciamos las posiciones y reemplazamos la mas cercana al siguiente simbolo por el resultado de la operacion
