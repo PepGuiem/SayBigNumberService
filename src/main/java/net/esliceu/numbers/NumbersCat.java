@@ -338,13 +338,17 @@ public class NumbersCat implements Numbers{
     private static String operatorCharacters(String word) {
 
         //Switch con todas las opciones y default si no es ninguna para retornar vacio
-        return switch (word) {
-            case "menys" -> "-";
-            case "més" -> "+";
-            case "dividit" -> "/";
-            case "per" -> "*";
-            default -> "";
-        };
+        switch (word) {
+            case "menys":
+                return "-";
+            case "més":
+                return "+";
+            case "dividit":
+                return "/";
+            case "per":
+                return "*";
+            default: return "";
+        }
     }
 
     //Funcion oper que opera usando como input las cadenas de texto.
