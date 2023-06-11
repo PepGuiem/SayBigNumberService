@@ -22,7 +22,7 @@ public class BigNumber implements BigNumberOperator{
         return s;
     }
 
-    // Constructor 1. Utilizando un String
+    // Constructor 1.1. Utilizando un String
     public BigNumber(String s) {
 
         //Limpiamos el String y despues lo asignamos como valor para este BigNumber
