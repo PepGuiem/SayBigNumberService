@@ -38,14 +38,14 @@ Diagrama Use Case:
 
 ![Diagrama Use Case](/img/UseCase.png "com_diagram")
 
-Diagrama comunicació:
+Diagrama seqüència:
 
 ![Diagrama de seqüència](/img/Sequence.png "com_diagram")
 
-Diagrama comunicació:
+Diagrama fluxe:
 
 ![Diagrama de fluxe.](/img/Flowchart.png "com_diagram")
 
-Diagrama comunicació:
+Diagrama classes:
 
 ![Diagrama de classes.](/img/ClassDiagram.png "com_diagram")
