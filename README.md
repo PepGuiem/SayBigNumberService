@@ -32,20 +32,20 @@ Per als tests API i End to End hem utilitzat una eina anomenada Postman, ens ha 
 ## Diagrames
 Diagrama comunicació:
 
-![Diagrama de comunicacio](/images/<imagen> "com_diagram")
+![Diagrama de comunicacio](/img/Comunication.png "com_diagram")
 
 Diagrama Use Case:
 
-![Diagrama Use Case](/images/<imagen> "com_diagram")
+![Diagrama Use Case](/img/UseCase.png "com_diagram")
 
 Diagrama comunicació:
 
-![Diagrama de seqüència](/images/<imagen> "com_diagram")
+![Diagrama de seqüència](/img/Sequence.png "com_diagram")
 
 Diagrama comunicació:
 
-![Diagrama de fluxe.](/images/<imagen> "com_diagram")
+![Diagrama de fluxe.](/img/Flowchart.png "com_diagram")
 
 Diagrama comunicació:
 
-![Diagrama de classes.](/images/<imagen> "com_diagram")
+![Diagrama de classes.](/img/ClassDiagram.png "com_diagram")
