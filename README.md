@@ -41,7 +41,7 @@ El sonar cloud ens ha servit per a veure els problemes i code smells del nostre 
 
 ## Test API / E2E
 Per als tests API i End to End hem utilitzat una eina anomenada Postman, ens ha permès fer tots els tests necessaris, també hem fet una MOB session
-provant els test enel nostre servidor de prova.
+provant els test en el nostre servidor de prova.
 
 ## Deployment
 Per a fer el nostre deployment ho feim manualmente degut a un problema reportat per varies persones que impedia fer-ho automaticamnt.
