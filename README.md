@@ -33,7 +33,7 @@ Posteriorment hem adaptat l'arxiu say Big Numbers Service i hem comprovat a que 
 Hem implementat els test unitaris que el que fem és comprovar que funciona el NumbersCat, també el BigNumber i posteriorment mirem que 
 compila. Dins els tests unitaris es proven casos especials i casos normals.
 
-##Tomcat/Maven
+## Tomcat/Maven
 Posteriorment probam el tomcat local ficant hi el .war dins la webapp i posteriorment fer proves dins la web.
 
 ## Deployment
