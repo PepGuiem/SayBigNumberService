@@ -1,0 +1,521 @@
+{
+	"info": {
+		"_postman_id": "056c578b-d98f-4e6b-b015-11c840e9f9b6",
+		"name": "SayBigNumber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27348456",
+		"_collection_link": "https://gold-space-666661.postman.co/workspace/My-Workspace~6fd9c045-203b-4826-8f01-6e4ba8ff62b7/collection/27348456-056c578b-d98f-4e6b-b015-11c840e9f9b6?action=share&creator=27348456&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Tres\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=3",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"say"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Cinc\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=5",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"say"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=1000000",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Un mili�\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=1000000",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"say"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "1000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=-6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Menys sis\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=-6",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"say"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "-6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=-0",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Zero\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/say?number=-0",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"say"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "-0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/operate?operation=add&number1=8&number2=2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"10\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/operate?operation=add&number1=8&number2=2",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"operate"
+					],
+					"query": [
+						{
+							"key": "operation",
+							"value": "add"
+						},
+						{
+							"key": "number1",
+							"value": "8"
+						},
+						{
+							"key": "number2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/operate?operation=subtract&number1=12500&number2=7823",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"4677\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/operate?operation=subtract&number1=12500&number2=7823",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"operate"
+					],
+					"query": [
+						{
+							"key": "operation",
+							"value": "subtract"
+						},
+						{
+							"key": "number1",
+							"value": "12500"
+						},
+						{
+							"key": "number2",
+							"value": "7823"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/operate?operation=subtract&number1=-8&number2=-2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"6\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/operate?operation=subtract&number1=-8&number2=-2",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"operate"
+					],
+					"query": [
+						{
+							"key": "operation",
+							"value": "subtract"
+						},
+						{
+							"key": "number1",
+							"value": "-8"
+						},
+						{
+							"key": "number2",
+							"value": "-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/service?operation=add&number1=8&number2=2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"<p>8 + 2 = 10 --> <b>Deu</b></p>\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/service?operation=add&number1=8&number2=2",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"service"
+					],
+					"query": [
+						{
+							"key": "operation",
+							"value": "add"
+						},
+						{
+							"key": "number1",
+							"value": "8"
+						},
+						{
+							"key": "number2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/service?operation=subtract&number1=10000&number2=802",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"<p>10000 - 802 = 9198 --> <b>Nou mil cent noranta-vuit</b></p>\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/service?operation=subtract&number1=10000&number2=802",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"service"
+					],
+					"query": [
+						{
+							"key": "operation",
+							"value": "subtract"
+						},
+						{
+							"key": "number1",
+							"value": "10000"
+						},
+						{
+							"key": "number2",
+							"value": "802"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/service?operation=add&number1=-8&number2=-2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"<p>-8 - -2 = 6 --> <b>Sis</b></p>\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tomcat222.cfgs.esliceu.net:8080/SayBigNumber/service?operation=subtract&number1=-8&number2=-2",
+					"protocol": "http",
+					"host": [
+						"tomcat222",
+						"cfgs",
+						"esliceu",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"SayBigNumber",
+						"service"
+					],
+					"query": [
+						{
+							"key": "operation",
+							"value": "subtract"
+						},
+						{
+							"key": "number1",
+							"value": "-8"
+						},
+						{
+							"key": "number2",
+							"value": "-2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
