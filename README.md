@@ -1,33 +1,62 @@
 # Pràctica SayBigNumberService
-1. Pipeline
-2. Implementació del codi
-3. Test Unitaris
-4. Deployment
-5. Sonar Cloud
-6. Test API / Test E2E
-7. Diagrames
+1. Funcionament del programa
+2. Pipeline
+3. Implementació del codi
+4. Test Unitaris
+5. Delivery
+6. Sonar Cloud
+7. Test API / Test E2E
+8. Deployment
+9. Dificultats de la pràctica
+10. Piràmide testing
+11. Diagrames
+
+## Funcionament del programa
+El funcionament del programa consisteix en que tenim 3 serveis: 
+
+          1. El primer servei és que si ens passen un nombre el puguem passar a escrit.
+          2. El segon servei és un calculador senzilla que ens permet fer càlculs amb nombres grans.
+          3. I finalment el tercer servei consisteix en el conjunt dels dos serveis, és a dir ens passen
+              una operació i nosaltres la solucionem i retorna'm el resultat però per escrit.
 
 ## Pipeline
 El nostre pipeline consisteix en les seguents pases:
 
-Implementar codi > Maven > Deployment > Test End to End / Test Api 
+Implementar codi > Unit test > Maven/Tomcat > Test End to End / Test Api > Deployment 
 
 ## Implementació del codi
 
-Per a la implementació del codi hem afegit arxius, també hem adaptat tots els arxius que teniem i els hem aplicat a la interfície juntament amb els nous que hem creat.
+Per a la implementació del codi hem afegit arxius que els hem aconseguit a base dels arxius de les pràctiques anteriors. 
+Posteriorment hem adaptat l'arxiu say Big Numbers Service i hem comprovat a que minim compila.
 
-## Tests unitaris / Maven
-Hem fet els test unitaris en Java i després els executa Maven per a asegurar que el codi esta net i llest per a pasar a la següent fase.
+## Tests unitaris
+Hem implementat els test unitaris que el que fem és comprovar que funciona el NumbersCat, també el BigNumber i posteriorment mirem que 
+compila. Dins els tests unitaris es proven casos especials i casos normals.
+
+##Tomcat/Maven(Delivery)
+Posteriorment probam el delivery a local amb el tomcat local ficant hi el .war dins la webapp i posteriorment fer proves dins la web.
+
+## Sonar Cloud
+El sonar cloud ens ha servit per a veure els problemes i code smells del nostre codi, això ens ha permét millorar la qualitat del nostre codi.
+
+## Test API / E2E
+Per als tests API i End to End hem utilitzat una eina anomenada Postman, ens ha permès fer tots els tests necessaris, també hem fet una MOB session
+provant els test enel nostre servidor de prova.
 
 ## Deployment
 Per a fer el nostre deployment ho feim manualmente degut a un problema reportat per varies persones que impedia fer-ho automaticamnt.
 Nosaltres hem utilitzat el TOMCAT instal·lat a el servidor que ens ha prestat en Manu.
 
-## Sonar Cloud
-El sonar cloud ens ha servit per a veure els problemes i code smells del nostre codi, això ens ha permés millorar la qualitat del nostre codi.
+## Dificultats de la pràctica
+Les principals dificultats que hem tingut sobre la pràctica han estat a l'hora de crear el .war i el maven, ja que, teniem una versio de java diferenta
+i aixo ens provocava conflictes i a l'hora de desplegar el programa a la webapp que l'hem fet manualment.
 
-## Test API / E2E
-Per als tests API i End to End hem utilitzat una eina anomenada Postman, ens ha permés fer tots els tests necessaris, també hem fet una MOB session porvant els test en aquest apartat.
+## Piràmide testing
+Dins la piràmide testing tenim dividit en tres nivells: 
+
+              1. El primer és unit test que bàsicament prova'm el codi funcioni i prova'm casos més especials.
+              2. El segon nivell és bassa amb els tests API que és bàsicament provar casos més complexos com pot ser nombres més grans.
+              3. Finalment, acabam la piràmide amb els tests E2E que bàsicament era provar que funcioni com toca.
 
 ## Diagrames
 Diagrama comunicació:
