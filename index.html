@@ -3,37 +3,59 @@
 }
 </style></head><body><h1 id="pr-ctica-saybignumberservice">Pràctica SayBigNumberService</h1>
 <ol>
+<li>Funcionament del programa</li>
 <li>Pipeline</li>
 <li>Implementació del codi</li>
 <li>Test Unitaris</li>
-<li>Deployment</li>
+<li>Delivery</li>
 <li>Sonar Cloud</li>
 <li>Test API / Test E2E</li>
+<li>Deployment</li>
+<li>Dificultats de la pràctica</li>
+<li>Piràmide testing</li>
 <li>Diagrames</li>
 </ol>
-<h2 id="pipeline">Pipeline</h2>
+<h2 id="funcionament-del-programa">Funcionament del programa</h2>
+<p>El funcionament del programa consisteix en que tenim 3 serveis: </p>
+<pre><code>      <span class="hljs-number">1</span>. El primer servei és que si ens passen un nombre el puguem passar <span class="hljs-selector-tag">a</span> escrit.
+      <span class="hljs-number">2</span>. El segon servei és un calculador senzilla que ens permet fer càlculs amb nombres grans.
+      <span class="hljs-number">3</span>. I finalment el tercer servei consisteix en el conjunt dels dos serveis, és <span class="hljs-selector-tag">a</span> dir ens passen
+          una operació <span class="hljs-selector-tag">i</span> nosaltres la solucionem <span class="hljs-selector-tag">i</span> retorna<span class="hljs-string">'m el resultat però per escrit.</span>
+</code></pre><h2 id="pipeline">Pipeline</h2>
 <p>El nostre pipeline consisteix en les seguents pases:</p>
-<p>Implementar codi &gt; Maven &gt; Deployment &gt; Test End to End / Test Api </p>
+<p>Implementar codi &gt; Unit test &gt; Maven/Tomcat &gt; Test End to End / Test Api &gt; Deployment </p>
 <h2 id="implementaci-del-codi">Implementació del codi</h2>
-<p>Per a la implementació del codi hem afegit arxius, també hem adaptat tots els arxius que teniem i els hem aplicat a la interfície juntament amb els nous que hem creat.</p>
-<h2 id="tests-unitaris-maven">Tests unitaris / Maven</h2>
-<p>Hem fet els test unitaris en Java i després els executa Maven per a asegurar que el codi esta net i llest per a pasar a la següent fase.</p>
+<p>Per a la implementació del codi hem afegit arxius que els hem aconseguit a base dels arxius de les pràctiques anteriors. 
+Posteriorment hem adaptat l&#39;arxiu say Big Numbers Service i hem comprovat a que minim compila.</p>
+<h2 id="tests-unitaris">Tests unitaris</h2>
+<p>Hem implementat els test unitaris que el que fem és comprovar que funciona el NumbersCat, també el BigNumber i posteriorment mirem que 
+compila. Dins els tests unitaris es proven casos especials i casos normals.</p>
+<p>##Tomcat/Maven(Delivery)
+Posteriorment probam el delivery a local amb el tomcat local ficant hi el .war dins la webapp i posteriorment fer proves dins la web.</p>
+<h2 id="sonar-cloud">Sonar Cloud</h2>
+<p>El sonar cloud ens ha servit per a veure els problemes i code smells del nostre codi, això ens ha permét millorar la qualitat del nostre codi.</p>
+<h2 id="test-api-e2e">Test API / E2E</h2>
+<p>Per als tests API i End to End hem utilitzat una eina anomenada Postman, ens ha permès fer tots els tests necessaris, també hem fet una MOB session
+provant els test en el nostre servidor de prova.</p>
 <h2 id="deployment">Deployment</h2>
 <p>Per a fer el nostre deployment ho feim manualmente degut a un problema reportat per varies persones que impedia fer-ho automaticamnt.
 Nosaltres hem utilitzat el TOMCAT instal·lat a el servidor que ens ha prestat en Manu.</p>
-<h2 id="sonar-cloud">Sonar Cloud</h2>
-<p>El sonar cloud ens ha servit per a veure els problemes i code smells del nostre codi, això ens ha permés millorar la qualitat del nostre codi.</p>
-<h2 id="test-api-e2e">Test API / E2E</h2>
-<p>Per als tests API i End to End hem utilitzat una eina anomenada Postman, ens ha permés fer tots els tests necessaris, també hem fet una MOB session porvant els test en aquest apartat.</p>
-<h2 id="diagrames">Diagrames</h2>
+<h2 id="dificultats-de-la-pr-ctica">Dificultats de la pràctica</h2>
+<p>Les principals dificultats que hem tingut sobre la pràctica han estat a l&#39;hora de crear el .war i el maven, ja que, teniem una versio de java diferenta
+i aixo ens provocava conflictes i a l&#39;hora de desplegar el programa a la webapp que l&#39;hem fet manualment.</p>
+<h2 id="pir-mide-testing">Piràmide testing</h2>
+<p>Dins la piràmide testing tenim dividit en tres nivells: </p>
+<pre><code>          1. El primer és unit <span class="hljs-keyword">test</span> <span class="hljs-keyword">que</span> bàsicament prova'<span class="hljs-keyword">m</span> el codi funcioni i prova'<span class="hljs-keyword">m</span> casos <span class="hljs-keyword">m</span>és especials.
+          2. El segon nivell és bassa amb els tests API <span class="hljs-keyword">que</span> és bàsicament provar casos <span class="hljs-keyword">m</span>és complexos com pot ser nombres <span class="hljs-keyword">m</span>és grans.
+          3. Finalment, acabam <span class="hljs-keyword">la</span> piràmide amb els tests E2E <span class="hljs-keyword">que</span> bàsicament era provar <span class="hljs-keyword">que</span> funcioni com toca.
+</code></pre><h2 id="diagrames">Diagrames</h2>
 <p>Diagrama comunicació:</p>
 <p><img src="/img/Comunication.png" alt="Diagrama de comunicacio" title="com_diagram"></p>
 <p>Diagrama Use Case:</p>
 <p><img src="/img/UseCase.png" alt="Diagrama Use Case" title="com_diagram"></p>
 <p>Diagrama seqüència:</p>
 <p><img src="/img/Sequence.png" alt="Diagrama de seqüència" title="com_diagram"></p>
-<p>Diagrama fluxe.</p>
+<p>Diagrama fluxe:</p>
 <p><img src="/img/Flowchart.png" alt="Diagrama de fluxe." title="com_diagram"></p>
 <p>Diagrama classes:</p>
 <p><img src="/img/ClassDiagram.png" alt="Diagrama de classes." title="com_diagram"></p>
-</body></html>
