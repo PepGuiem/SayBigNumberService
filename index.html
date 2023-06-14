@@ -23,23 +23,23 @@
           una operació <span class="hljs-selector-tag">i</span> nosaltres la solucionem <span class="hljs-selector-tag">i</span> retorna<span class="hljs-string">'m el resultat però per escrit.</span>
 </code></pre><h2 id="pipeline">Pipeline</h2>
 <p>El nostre pipeline consisteix en les seguents pases:</p>
-<p>Implementar codi &gt; Unit test &gt; Maven/Tomcat &gt; Test End to End / Test Api &gt; Deployment </p>
+<p>Implementar codi &gt; Unit test &gt; Maven/Tomcat &gt; Deployment &gt; Test End to End / Test Api  </p>
 <h2 id="implementaci-del-codi">Implementació del codi</h2>
 <p>Per a la implementació del codi hem afegit arxius que els hem aconseguit a base dels arxius de les pràctiques anteriors. 
 Posteriorment hem adaptat l&#39;arxiu say Big Numbers Service i hem comprovat a que minim compila.</p>
 <h2 id="tests-unitaris">Tests unitaris</h2>
 <p>Hem implementat els test unitaris que el que fem és comprovar que funciona el NumbersCat, també el BigNumber i posteriorment mirem que 
 compila. Dins els tests unitaris es proven casos especials i casos normals.</p>
-<p>##Tomcat/Maven(Delivery)
-Posteriorment probam el delivery a local amb el tomcat local ficant hi el .war dins la webapp i posteriorment fer proves dins la web.</p>
+<h2>Tomcat/Maven</h2>
+<p>Posteriorment probam el tomcat local ficant hi el .war dins la webapp i posteriorment fer proves dins la web.</p>
+<h2 id="deployment">Deployment</h2>
+<p>Per a fer el nostre deployment ho feim manualmente degut a un problema reportat per varies persones que impedia fer-ho automaticamnt.
+Nosaltres hem utilitzat el TOMCAT instal·lat a el servidor que ens ha prestat en Manu.</p>
 <h2 id="sonar-cloud">Sonar Cloud</h2>
 <p>El sonar cloud ens ha servit per a veure els problemes i code smells del nostre codi, això ens ha permét millorar la qualitat del nostre codi.</p>
 <h2 id="test-api-e2e">Test API / E2E</h2>
 <p>Per als tests API i End to End hem utilitzat una eina anomenada Postman, ens ha permès fer tots els tests necessaris, també hem fet una MOB session
 provant els test en el nostre servidor de prova.</p>
-<h2 id="deployment">Deployment</h2>
-<p>Per a fer el nostre deployment ho feim manualmente degut a un problema reportat per varies persones que impedia fer-ho automaticamnt.
-Nosaltres hem utilitzat el TOMCAT instal·lat a el servidor que ens ha prestat en Manu.</p>
 <h2 id="dificultats-de-la-pr-ctica">Dificultats de la pràctica</h2>
 <p>Les principals dificultats que hem tingut sobre la pràctica han estat a l&#39;hora de crear el .war i el maven, ja que, teniem una versio de java diferenta
 i aixo ens provocava conflictes i a l&#39;hora de desplegar el programa a la webapp que l&#39;hem fet manualment.</p>
