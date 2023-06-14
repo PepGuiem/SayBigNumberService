@@ -22,7 +22,7 @@ El funcionament del programa consisteix en que tenim 3 serveis:
 ## Pipeline
 El nostre pipeline consisteix en les seguents pases:
 
-Implementar codi > Unit test > Maven/Tomcat > Test End to End / Test Api > Deployment 
+Implementar codi > Unit test > Maven/Tomcat > Deployment > Test End to End / Test Api  
 
 ## Implementació del codi
 
@@ -33,8 +33,12 @@ Posteriorment hem adaptat l'arxiu say Big Numbers Service i hem comprovat a que 
 Hem implementat els test unitaris que el que fem és comprovar que funciona el NumbersCat, també el BigNumber i posteriorment mirem que 
 compila. Dins els tests unitaris es proven casos especials i casos normals.
 
-##Tomcat/Maven(Delivery)
-Posteriorment probam el delivery a local amb el tomcat local ficant hi el .war dins la webapp i posteriorment fer proves dins la web.
+##Tomcat/Maven
+Posteriorment probam el tomcat local ficant hi el .war dins la webapp i posteriorment fer proves dins la web.
+
+## Deployment
+Per a fer el nostre deployment ho feim manualmente degut a un problema reportat per varies persones que impedia fer-ho automaticamnt.
+Nosaltres hem utilitzat el TOMCAT instal·lat a el servidor que ens ha prestat en Manu.
 
 ## Sonar Cloud
 El sonar cloud ens ha servit per a veure els problemes i code smells del nostre codi, això ens ha permét millorar la qualitat del nostre codi.
@@ -42,10 +46,6 @@ El sonar cloud ens ha servit per a veure els problemes i code smells del nostre 
 ## Test API / E2E
 Per als tests API i End to End hem utilitzat una eina anomenada Postman, ens ha permès fer tots els tests necessaris, també hem fet una MOB session
 provant els test en el nostre servidor de prova.
-
-## Deployment
-Per a fer el nostre deployment ho feim manualmente degut a un problema reportat per varies persones que impedia fer-ho automaticamnt.
-Nosaltres hem utilitzat el TOMCAT instal·lat a el servidor que ens ha prestat en Manu.
 
 ## Dificultats de la pràctica
 Les principals dificultats que hem tingut sobre la pràctica han estat a l'hora de crear el .war i el maven, ja que, teniem una versio de java diferenta
